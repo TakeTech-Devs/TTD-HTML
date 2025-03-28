@@ -1,0 +1,71 @@
+.laptop-carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .laptop-background {
+    width: 100%;
+    max-width: 900px;
+    z-index: 1;
+  }
+  
+  .carousel-inside-laptop {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 2;
+  }
+  
+  .carousel-card {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .service-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .service-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .service-content h4 {
+    color: #3b592d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .service-content p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .slick-dots li button:before {
+    color: green;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: darkgreen;
+  }
+  

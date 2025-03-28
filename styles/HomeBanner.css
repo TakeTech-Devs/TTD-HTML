@@ -1,0 +1,3 @@
+.banner-text{padding-block-start: 60px; padding-inline-end: 80px;}
+.banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;}
+.banner-image img{object-fit: contain;}

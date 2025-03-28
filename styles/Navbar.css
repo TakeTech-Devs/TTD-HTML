@@ -1,0 +1,34 @@
+header.sticky{position: fixed; top: 0; width: 100%; background-color: #fff; z-index: 9;}
+.navbar.navbar-expand-lg.navbar-light {padding-block:0px;}
+.ms-auto.nav-links.navbar-nav{margin-block-start: -2px;}
+.navbar-scrolled {background-color:rgba(255, 255, 255, 0.7); backdrop-filter:blur(10px);}
+.navbar-brand {width: 170px; height: auto; margin-block-start: 15px;}
+.navbar-brand  img{object-fit: contain;}
+.navbar-toggler {border:none !important; outline:none !important; box-shadow:none !important;}
+.nav-links {display:flex; align-items:center;}
+.nav-links .nav-link {padding:38px 15px 20px 15px; font-weight:bold; color:black; margin-right:10px; transition:background 0.3s;}
+.nav-links .active-link {padding:38px 15px 20px 15px; background-color:#A9D18E; color: #3C5326; font-size:15px; display:inline-block;}
+.ms-auto.nav-links.navbar-nav .header-button {background-color:#E8B145; color:black; font-weight:bold; padding:8px 20px; transition:background 0.3s ease; border:1px solid #F4B942; border-radius:20px 0px 20px 0px; margin-block-start: 15px;}
+.contact-us-btn:hover {background-color:#e0a832 !important;}
+
+@media (max-width: 992px) {
+.navbar-collapse {text-align:left;}
+.navbar-logo {height:35px; margin-left:15px;}
+.nav-links {flex-direction:column; width:100%; align-items:flex-start;}
+.nav-links .nav-link {width:fit-content; margin:5px 0; padding:8px 15px; text-align:left; font-size:16px;}
+.nav-links .active-link {font-size:12px; padding:8px 30px; width:fit-content; margin-left:5px;}
+.contact-us-btn {margin-left:5px;}
+}
+
+@media (max-width: 768px) {
+.nav-links {align-items:flex-start;}
+.nav-links .nav-link {font-size:14px; padding:8px 15px;}
+.nav-links .active-link {font-size:12px; padding:8px 30px; width:fit-content; margin-left:5px;}
+.contact-us-btn {margin-left:5px;}
+}
+
+@media (max-width: 480px) {
+.nav-links .nav-link {font-size:13px; padding:6px 10px;}
+.nav-links .active-link {font-size:12px; padding:8px 30px; width:fit-content; margin-left:5px;}
+.contact-us-btn {margin-left:5px;}
+}

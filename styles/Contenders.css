@@ -1,0 +1,7 @@
+.contender-container {display:flex; flex-wrap:wrap; justify-content:space-between; width:100%; padding:20px; gap: 10px;}
+.contender-card {display:flex; align-items:center; background:#B8DC9E; padding-left:25px; min-height:200px; width: calc(50% - 5px) !important;box-sizing: border-box;}
+.contender-card img {width:210px; height:290px; object-fit:cover; margin-right:15px;}
+.contender-info {text-align:right;padding-left: 150px;padding-bottom: 130px;}
+.contender-text-box {text-align:left; display:flex; flex-direction:column; justify-content:center; padding:20px;}
+.contender-text-box p{padding-left: 430px;}
+.contenders-button {margin-top:50px;}

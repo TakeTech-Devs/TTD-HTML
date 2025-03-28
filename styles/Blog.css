@@ -1,0 +1,4 @@
+.blog-card {position:relative; width:320px; height:700px; overflow:hidden;}
+.blog-card img {object-fit:cover;}
+.blog-content {position:absolute; bottom:0; height:290px; display: flex; flex-direction: column; justify-content: end; background: #FFFFFFCC;padding:20px 25px; text-align:center;}
+.blog-content h5{line-height: 50px;font-size: 22px;}

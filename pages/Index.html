@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="../Global.css">
+</head>
+<body>
+
+    <main>
+        <section id="home-banner"></section>
+        <div class="background-container">
+            <section class="gap-top" id="about-us"></section>
+            <section class="gap-top" id="services"></section>
+            <section class="gap-top" id="feedback"></section>
+            <section class="gap-top" id="blog"></section>
+            <section class="gap-top gap-bottom" id="contenders"></section>
+            <section class="gap-bottom" id="portfolio"></section>
+            <section class="gap-top gap-bottom" id="contact-section"></section>
+        </div>
+    </main>
+
+    <script>
+        function loadHTML(sectionId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => document.getElementById(sectionId).innerHTML = data)
+                .catch(error => console.error("Error loading " + filePath, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            loadHTML("home-banner", "../Components/HomeBanner.html");
+            loadHTML("about-us", "../Components/AboutUs.html");
+            loadHTML("services", "../Components/Services.html");
+            loadHTML("feedback", "../Components/Feedback.html");
+            loadHTML("blog", "../Components/Blog.html");
+            loadHTML("contenders", "../Components/Contenders.html");
+            loadHTML("portfolio", "../Components/Portfolio.html");
+            loadHTML("contact-section", "../Components/ContactSection.html");
+        });
+    </script>
+
+    <style>
+        .background-container {
+            background-image: url("../assets/Background.png");
+            background-size: cover;
+            background-repeat: repeat-y;
+        }
+
+        .gap-top {
+            margin-top: 50px;
+        }
+
+        .gap-bottom {
+            margin-bottom: 50px;
+        }
+    </style>
+
+</body>
+</html>

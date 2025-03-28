@@ -1,0 +1,20 @@
+.footer {padding-top:50px; background-size:cover; color:#000; background-image:url(../assets/footer.png);box-shadow: 0px 0px 50px 0px #98C97499;}
+.footer-content{display:flex; justify-content:space-between;}
+.footer-logo {font-size:22px; width:120px; height:auto;}
+.footer-logo img {object-fit:contain;}
+.footer-about p {font-size:14px; margin-top:10px;}
+.social-icons {display:flex; gap:10px; margin-top:15px;}
+.social-icon {padding: 4px;border-radius: 50%;display: flex;align-items: center;
+justify-content: center;width: 35px;height: 35px;}
+.footer-links h5, .footer-contact h5 {font-weight:500; margin-bottom:15px; color:#000;}
+.footer-links ul {list-style:none; padding:0;}
+.footer-links ul li {margin-bottom:8px;}
+.footer-links ul li a {text-decoration:none; color:#000; font-size:14px;}
+.footer-contact .contact-item {display:flex; align-items:center; gap:12px; font-size:14px; margin-bottom:10px;}
+.icon-wrapper {width:20px; height:20px; display:flex; align-items:center; justify-content:center;}
+.contact-icon {width: 25px;height: 25px;padding: 2px;}
+.hr {border-color:rgba(255, 255, 255, 0.3); margin:20px 0;}
+.footer-bottom {display:flex; justify-content:space-between; align-items:center;}
+.footer-bottom p {font-size:13px; font-weight:400; padding: 0;margin-bottom: 30px;}
+.footer-policy {margin-bottom: 30px; display: flex;justify-content: end;}
+.footer-policy a{text-decoration:none; color:#000; font-size: 13px;padding-right:20px; }
