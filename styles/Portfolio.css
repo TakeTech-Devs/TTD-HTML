@@ -1,10 +1,8 @@
-.portfolio-section {background-color:#B8DC9E; border-radius:150px 0 150px 0; padding:60px 40px; height:800px;}
-.portfolio-content {max-width:290px; justify-content:center; align-items:center; margin-top:150px;}
-.device-images {justify-content:center; align-items:center; margin-top:140px;}
-.device-images img {object-fit:contain;}
+.portfolio-content {margin-top:150px;}
+.portfolio-image { height: 600px;}
+.portfolio-image img {object-fit:contain;}
 
 @media (max-width: 768px) {
-.portfolio-section {text-align:center;}
 .portfolio-content {max-width:100%;}
-.device-images {flex-wrap:wrap;}
+.portfolio-image {flex-wrap:wrap;}
 }
