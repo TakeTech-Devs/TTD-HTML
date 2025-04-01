@@ -1,5 +1,5 @@
-.feedback-top{padding-top:180px;}
-.feedback-container{padding-left: 100px;}
+/* .feedback-top{padding-top:180px;} */
+/* .feedback-container{padding-left: 100px;} */
 .feedback-box-wrapper {padding-inline:20px;}
 .feedback-box {background-color:#B8DC9E; padding:30px; text-align:center; height:100%; box-shadow:-6px 5px 10px 0px #52793780;margin-top: 20px;margin-bottom: 10px;}
 .feedback-header {display:flex; gap:15px; margin-bottom:10px;align-items: center;background-color: #EAF5D9;width: 315px;height: 85px;border-radius: 50px 0 0 50px;}
@@ -13,7 +13,7 @@
 .feedback-rating {display:flex; gap:3px; list-style:none; padding:0; margin:0;}
 .feedback-rating li {color:#527937; font-size:15px;}
 .feedback-date {font-size:15px; padding:0; margin:0;}
-.testimonial-container {display:flex; justify-content:center; align-items:center; padding:30px; position:relative; margin-top:80px;}
+.testimonial-container {display:flex; justify-content:center; align-items:center; padding:30px; position:relative; margin-top:60px;}
 .testimonial-container::before {content:''; position:absolute; top:0; left:0; width:81px; height:79px; background-image:url(../assets/Leftquote.png); background-size:cover; z-index:3;}
 .testimonial-container::after {content:''; position:absolute; bottom:0; right:0; width:81px; height:79px; background-image:url(../assets/Rightquote.png); background-size:cover; z-index:3;}
 .quote-box {background-color:#DFF2D1; color:#000; padding:28px 100px; border-radius:75px 0 75px 0; width:100%; text-align:center; position:relative; font-size:25px; font-weight:500;}
