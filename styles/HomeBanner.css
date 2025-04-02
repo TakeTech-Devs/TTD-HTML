@@ -1,4 +1,4 @@
-.home-upper{background-size:100% 100%; background-image: url(../assets/header.png);}
+.home-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 110vh;}
 .banner-text{padding-block-start: 60px; padding-inline-end: 80px;}
 .banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;}
 .banner-image img{object-fit: contain;}

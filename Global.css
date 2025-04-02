@@ -1,6 +1,6 @@
-.app-container{font-family:'Cabin';color:#2f5721}
+.app-container{color:#2f5721}
 body{padding:0;margin:0;background-color: #D7F3C2; }
-*{padding: 0; margin: 0; box-sizing: border-box;}
+*{padding: 0; margin: 0; box-sizing: border-box;font-family:'Cabin';}
 
 h1{font-size: 70px; font-weight: 700;color:#537937; line-height: 1.2;  margin-block-end: 30px;font-family: 'Poppins';}
 h2{display: inline-block;font-weight: 700; font-size: 50px; color: #000;line-height: 1; padding-inline: 40px;padding-block: 30px; margin-block-end: 35px;position: relative; z-index: 1;font-family: 'Poppins';}
