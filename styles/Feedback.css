@@ -18,4 +18,69 @@
 .feedback-author {display:block; text-align:right; font-size:20px; font-weight:500; padding-right:50px;}
 .feedback-author::before {content:'-'; position:absolute; right:260px; width:79px; height:79px; z-index:3;}
 
-
+@media screen and (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    .feedback-box-wrapper {
+      padding-inline: 10px;
+    }
+    .feedback-box {
+      padding: 15px;
+    }
+    .feedback-header {
+      height: auto;
+    }
+    .feedback-profile {
+      width: 100px;
+      height: 100px;
+    }
+    .feedback-profile img {
+      width: 90px;
+      height: 90px;
+    }
+    .feedback-details-heading {
+      width: 100%;
+      padding: 20px;
+      height: auto;
+      text-align: center;
+    }
+    .feedback-footer {
+      gap: 100px;
+    }
+    .quote-box {
+      font-size: 20px;
+    }
+    .feedback-author {
+      font-size: 16px;
+      padding-right: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .feedback-box {
+      padding: 10px;
+    }
+    .feedback-header {
+      height: auto;
+    }
+    .feedback-profile {
+      width: 80px;
+      height: 80px;
+    }
+    .feedback-profile img {
+      width: 70px;
+      height: 70px;
+    }
+    .feedback-details-heading {
+        width: 300px;
+        padding: 15px;
+    }
+    .quote-box {
+      padding: 15px 65px;
+      font-size: 18px;
+    }
+  }
