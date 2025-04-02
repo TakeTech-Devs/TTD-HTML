@@ -3,3 +3,23 @@
 .blog-card:hover {transform: scale(1.05);cursor: pointer;}
 .blog-content {position:absolute; bottom:0; height:290px; display: flex; flex-direction: column; justify-content: end; background: #FFFFFFCC;padding:20px 25px; text-align:center;}
 .blog-content h5{line-height: 50px;font-size: 22px;}
+
+@media screen and (max-width: 768px) {
+    .blog-card {
+      height: 600px;
+    }
+    .blog-content {
+      height: 250px;
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .blog-card {
+      height: 500px;
+    }
+    .blog-content {
+      height: 260px;
+      padding: 10px;
+    }
+  }

@@ -2,3 +2,24 @@
 .banner-text{padding-block-start: 60px; padding-inline-end: 80px;}
 .banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;}
 .banner-image img{object-fit: contain;}
+
+@media screen and (max-width: 768px) {
+    .banner-text {
+      padding-block-start: 30px;
+      padding-inline-end: 20px;
+    }
+    .banner-image {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .banner-text {
+      padding-block-start: 20px;
+      padding-inline-end: 10px;
+    }
+    .banner-image img {
+      width: 90%;
+    }
+  }
+  

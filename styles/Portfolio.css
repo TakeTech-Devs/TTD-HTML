@@ -1,6 +1,8 @@
 .portfolio-image img {object-fit:contain;}
 
-@media (max-width: 768px) {
-.portfolio-content {max-width:100%;}
+@media screen and (max-width: 768px) {
 .portfolio-image {flex-wrap:wrap;}
+}
+@media screen and (max-width: 480px) {
+    .portfolio-content {padding-top: 20px;}
 }

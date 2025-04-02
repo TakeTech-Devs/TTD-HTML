@@ -8,3 +8,48 @@
 .about-section-image {width:545px; height:500px; }
 .about-section-image img {object-fit:contain;}
 .about-section-text{background-color: #fff;width: 470px;padding: 30px 37px;}
+
+
+@media screen and (max-width: 768px) {
+    .about-text {
+      padding-inline-end: 10px;
+    }
+    .about-text h6 {
+      font-size: 32px;
+    }
+    .about-right {
+      width: 100%;
+    }   
+    .about-section {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+    .about-section-image {
+      width: 100%;
+      height: auto;
+      padding-bottom: 20px;
+    }
+    .about-section-text {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about-text h6 {
+      font-size: 28px;
+    }
+    .service-icon {
+      height: 50px;
+      width: 50px;
+      padding: 8px;
+    }
+    .about-section {
+      padding: 15px;
+    }
+    .about-section-text {
+      padding: 15px;
+    }
+  }
+  
