@@ -1,7 +1,7 @@
 .contact-section {background-color:#B8DC9E; height:240px; display:flex; align-items:center; justify-content:center;}
-.contact-image {width:585px; height:370px; display:flex; justify-content:center;}
+.contact-image {width:585px; height:370px;}
 .contact-image img {object-fit:contain;}
-.contact-text {text-align:left; margin-top:100px;}
+
 .subscription-form {display:flex; background-color:#fff; border-radius:21px; align-items:center; width:480px; padding-left:10px;}
 .subscription-form input {flex-grow:1; padding:10px; border:none; border-radius:21px 0 0 21px; font-size:16px;}
 .subscription-form input:focus {outline:none; box-shadow:none; border:none;}

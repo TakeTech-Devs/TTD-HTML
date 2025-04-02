@@ -4,3 +4,7 @@
 .service-icon {height: 60px;width: 60px;border-radius: 50%;background: #fff; padding: 10px;box-shadow: 0px -5px 25px 0px #98C97480;}
 .about-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;}
 .about-image img{object-fit: contain;}
+.about-section {background-color:#B8DC9E; height:430px; display:flex; align-items:center; justify-content:center;}
+.about-section-image {width:545px; height:500px; }
+.about-section-image img {object-fit:contain;}
+.about-section-text{background-color: #fff;width: 470px;height: 280px;padding: 30px 37px;}
