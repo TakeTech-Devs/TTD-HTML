@@ -13,7 +13,7 @@
 .contact-us-btn:hover {background-color:#e0a832 !important;}
 
 @media (max-width: 992px) {
-.navbar-collapse {text-align:left;}
+.navbar-collapse {text-align:left;  }
 .navbar-logo {height:35px; margin-left:15px;}
 .nav-links {flex-direction:column; width:100%; align-items:flex-start;}
 .nav-links .nav-link {width:fit-content; margin:5px 0; padding:8px 15px; text-align:left; font-size:16px;}

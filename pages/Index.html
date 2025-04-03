@@ -32,15 +32,31 @@
     <section id="footer"></section>
 
     <script>
-        function loadHTML(sectionId, filePath) {
+        function loadHTML(sectionId, filePath, callback) {
             fetch(filePath)
                 .then(response => response.text())
-                .then(data => document.getElementById(sectionId).innerHTML = data)
+                .then(data => {
+                    document.getElementById(sectionId).innerHTML = data;
+                    if (callback) callback(); 
+                })
                 .catch(error => console.error("Error loading " + filePath, error));
         }
 
         document.addEventListener("DOMContentLoaded", function () {
-            loadHTML("header", "../GlobalComponents/Navbar.html");
+            loadHTML("header", "../GlobalComponents/Navbar.html", function () {
+                setTimeout(() => {
+                    const navbarToggler = document.querySelector(".navbar-toggler");
+                    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+                    if (navbarToggler && navbarCollapse) {
+                        navbarToggler.addEventListener("click", function () {
+                            navbarCollapse.classList.toggle("show");
+                            navbarToggler.classList.toggle("collapsed");
+                        });
+                    }
+                }, 100);
+            });
+
             loadHTML("home-banner", "../Components/HomeBanner.html");
             loadHTML("about-us", "../Components/AboutUs.html");
             loadHTML("services", "../Components/Services.html");
@@ -51,6 +67,8 @@
             loadHTML("contact-section", "../Components/ContactSection.html");
             loadHTML("footer", "../GlobalComponents/Footer.html");
         });
+
+
     </script>
 
 </body>
