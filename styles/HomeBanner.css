@@ -1,11 +1,11 @@
-.home-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 110vh;}
-.banner-text{padding-block-start: 60px; padding-inline-end: 80px;}
-.banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;}
+.home-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 120vh;}
+.banner-text{padding-block-start: 90px; padding-inline-end: 80px;}
+.banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;padding-block-start: 90px;}
 .banner-image img{object-fit: contain;}
 
 @media screen and (max-width: 768px) {
+    .home-upper{height: 160vh;}
     .banner-text {
-      padding-block-start: 30px;
       padding-inline-end: 20px;
     }
     .banner-image {
@@ -14,10 +14,11 @@
   }
   
   @media screen and (max-width: 480px) {
-    .banner-text {
-      padding-block-start: 20px;
+    .home-upper{height: 230vh; background-size: cover;}
+    .banner-text {   
       padding-inline-end: 10px;
     }
+    .banner-image{padding-block-start: 5px;}
     .banner-image img {
       width: 90%;
     }

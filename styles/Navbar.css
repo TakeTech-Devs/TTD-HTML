@@ -1,8 +1,8 @@
 .navbar-container{background-color: #fff;}
-header.sticky{position: fixed; top: 0; width: 100%; background-color: #fff; z-index: 9;}
+.sticky-navbar{position: fixed; top: 0; width: 100%; background-color: #fff; z-index: 9;}
 .navbar.navbar-expand-lg.navbar-light {padding-block:0px;}
 .ms-auto.nav-links.navbar-nav{margin-block-start: -2px;}
-.navbar-scrolled {background-color:rgba(255, 255, 255, 0.7); backdrop-filter:blur(10px);}
+.sticky-navbar-scrolled {background-color:rgba(255, 255, 255, 0.7); backdrop-filter:blur(10px);}
 .navbar-brand {width: 170px; height: auto; margin-block-start: 15px;}
 .navbar-brand  img{object-fit: contain;}
 .navbar-toggler {border:none !important; outline:none !important; box-shadow:none !important;}
