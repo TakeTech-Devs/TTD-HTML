@@ -5,7 +5,7 @@
 .footer-about p {font-size:14px; margin-top:10px;}
 .social-icons {display:flex; gap:10px; margin-top:15px;}
 .social-icon {padding: 4px;border-radius: 50%;display: flex;align-items: center;
-justify-content: center;width: 50px;height: 50px;}
+justify-content: center;width: 50px;height: 50px;object-fit: contain;}
 .footer-links h5, .footer-contact h5 {font-weight:500; margin-bottom:15px; color:#000;}
 .footer-links ul {list-style:none; padding:0;}
 .footer-links ul li {margin-bottom:8px;}
@@ -18,3 +18,26 @@ justify-content: center;width: 50px;height: 50px;}
 .footer-bottom p {font-size:13px; font-weight:400; padding: 0;margin-bottom: 30px;}
 .footer-policy {margin-bottom: 30px; display: flex;justify-content: end;}
 .footer-policy a{text-decoration:none; color:#000; font-size: 13px;padding-right:20px; }
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+    }
+    
+    .footer-about {
+        grid-column: span 3;
+    }
+
+    .footer-links, .footer-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    .social-icon{width: 35px;height: 35px;}
+    .contact-icon{width: 28px;height: 28px;}
+}
+
+@media screen and (max-width: 480px) {
+    .social-icon{width: 32px;height: 32px;}
+    .contact-icon{width: 25px;height: 25px;}
+}

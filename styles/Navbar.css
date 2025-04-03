@@ -16,20 +16,21 @@
 .navbar-collapse {text-align:left;  }
 .navbar-logo {height:35px; margin-left:15px;}
 .nav-links {flex-direction:column; width:100%; align-items:flex-start;}
-.nav-links .nav-link {width:fit-content; margin:5px 0; padding:8px 15px; text-align:left; font-size:16px;}
-.nav-links .active-link {font-size:12px; padding:8px 30px; width:fit-content; margin-left:5px;}
+.nav-links .nav-link { margin:5px 0; padding:8px 15px; text-align:left; }
+.nav-links .active-link {   margin-left:5px;}
 .contact-us-btn {margin-left:5px;}
 }
 
 @media (max-width: 768px) {
 .nav-links {align-items:flex-start;}
-.nav-links .nav-link {font-size:14px; padding:8px 15px;}
-.nav-links .active-link {font-size:12px; padding:8px 30px; width:fit-content; margin-left:5px;}
+
+.nav-links .active-link {  margin-left:5px;}
 .contact-us-btn {margin-left:5px;}
+.ms-auto.nav-links.navbar-nav{margin-block-end: 10px;}
 }
 
 @media (max-width: 480px) {
-.nav-links .nav-link {font-size:13px; padding:6px 10px;}
-.nav-links .active-link {font-size:12px; padding:8px 30px; width:fit-content; margin-left:5px;}
+
+.nav-links .active-link {   margin-left:5px;}
 .contact-us-btn {margin-left:5px;}
 }
