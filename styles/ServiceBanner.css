@@ -1,0 +1,25 @@
+.service-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 100vh;}
+.service-banner-text{padding-block-start: 90px; padding-inline-end: 80px;}
+.service-banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;padding-block-start: 90px;}
+.service-banner-image img{object-fit: contain;}
+
+@media screen and (max-width: 768px) {
+    .service-banner-text {
+      padding-inline-end: 20px;
+    }
+    .service-banner-image {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .service-upper{height: 130vh; background-size: cover;}
+    .service-banner-text {   
+      padding-inline-end: 10px;
+    }
+    .service-banner-image{padding-block-start: 5px;}
+    .service-banner-image img {
+      width: 90%;
+    }
+  }
+  
