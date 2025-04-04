@@ -1,10 +1,9 @@
-.aboutus-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 110vh;}
+.aboutus-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 120vh;}
 .aboutus-banner-text{padding-block-start: 90px; padding-inline-end: 80px;}
 .aboutus-banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;padding-block-start: 90px;}
 .aboutus-banner-image img{object-fit: contain;}
 
 @media screen and (max-width: 768px) {
-    .aboutus-upper{height: 100vh;}
     .aboutus-banner-text {
       padding-inline-end: 20px;
     }
@@ -14,7 +13,7 @@
   }
   
   @media screen and (max-width: 480px) {
-    .aboutus-upper{height: 130vh; background-size: cover;}
+    .aboutus-upper{height: 230vh; background-size: cover;}
     .aboutus-banner-text {   
       padding-inline-end: 10px;
     }
