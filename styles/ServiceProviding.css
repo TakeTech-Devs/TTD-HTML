@@ -1,0 +1,3 @@
+.service-right-content{background-color: #B8DC9E; width: 350px;height:110px;display: flex;flex-direction:column;align-items: center;}
+.service-right-content-image{height: 100px;width: 100px;margin-block-start: -70px;}
+.service-right-content-image img{object-fit: contain;}
