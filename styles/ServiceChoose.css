@@ -1,0 +1,5 @@
+.service-choose-image img {object-fit:contain;}
+
+@media screen and (max-width: 768px) {
+.service-choose-image {flex-wrap:wrap;}
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Global.css">
+</head>
+
+<body>
+    <section id="header"></section>
+    <main>
+        <div>
+            <section id="about-banner"></section>
+            <div class='body-curve-left'>
+                <section class="gap-top" id="about-content"></section>
+            </div>
+            <div class='body-curve-right'>
+                <section class="gap-top" id="service-providing"></section>
+                <section class="gap-top gap-bottom" id="service-choose"></section>
+                <section class="gap-top" id="feedback"></section>
+                <section class="gap-top gap-bottom" id="contact-section"></section>
+            </div>
+        </div>
+    </main>
+    <section id="footer"></section>
+
+    <script>
+        function loadHTML(sectionId, filePath, callback) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(sectionId).innerHTML = data;
+                    if (callback) callback(); 
+                })
+                .catch(error => console.error("Error loading " + filePath, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadHTML("header", "../GlobalComponents/Navbar.html", function () {
+                setTimeout(() => {
+                    const navbarToggler = document.querySelector(".navbar-toggler");
+                    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+                    if (navbarToggler && navbarCollapse) {
+                        navbarToggler.addEventListener("click", function () {
+                            navbarCollapse.classList.toggle("show");
+                            navbarToggler.classList.toggle("collapsed");
+                        });
+                    }
+                }, 100);
+            });
+
+            loadHTML("about-banner", "../Components/AboutUsBanner.html");
+            loadHTML("about-content", "../Components/AboutContent.html");
+            loadHTML("service-providing", "../Components/ServiceProviding.html");
+            loadHTML("service-choose", "../Components/ServiceChoose.html");            
+            loadHTML("feedback", "../Components/Feedback.html");
+            loadHTML("contact-section", "../Components/ContactSection.html");
+            loadHTML("footer", "../GlobalComponents/Footer.html");
+        });
+
+
+    </script>
+
+</body>
+
+</html>
