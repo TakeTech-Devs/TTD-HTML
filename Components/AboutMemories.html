@@ -28,14 +28,14 @@
         <div class="row">
             <div class="d-flex gap-5 ">
                 <div class="about-container-header">
-                    <p>2023</p>
+                    <h6>2023</h6>
                 </div>
                 <div class="about-container-header">
-                    <p>2024</p>
+                    <h6>2024</h6>
                 </div>
                 <div>
                     <div class="about-container-header">
-                        <p>2025</p>
+                        <h6>2025</h6>
                     </div>
                 </div>
             </div>
@@ -63,47 +63,66 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="container-xxl">
-                <div class="about-photo-grid mt-4">
+    <div class="container-fluid px-0">
+        <div class="about-photo-grid mt-4">
+            <div class="row g-3">
+                <div class="col-lg-6 d-flex flex-column gap-3">
+                    <img src="../assets/Memory1.png" class="img-fluid w-100" alt="Memory 1">
+
                     <div class="row g-3">
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <img src="../assets/Memory1.png" class="img-fluid w-100" alt="Memory 1">
-            
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <img src="../assets/Memory4.png" class="img-fluid w-100" alt="Memory 4">
-                                </div>
-                                <div class="col-6">
-                                    <img src="../assets/Memory5.png" class="img-fluid w-100" alt="Memory 5">
-                                </div>
-                                <div class="col-6">
-                                    <img src="../assets/Memory6.png" class="img-fluid w-100" alt="Memory 6">
-                                </div>
-                                <div class="col-6">
-                                    <img src="../assets/Memory7.png" class="img-fluid w-100" alt="Memory 7">
-                                </div>                                
-                            </div>
+                        <div class="col-6">
+                            <img src="../assets/Memory4.jfif" class="img-fluid w-100" alt="Memory 4">
                         </div>
-            
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <img src="../assets/Memory2.png" class="img-fluid w-100" alt="Memory 2">
-                                </div>
-                                <div class="col-12">
-                                    <img src="../assets/Memory3.png" class="img-fluid w-100" alt="Memory 3">
-                                </div>
-                                <div class="col-12">
-                                    <img src="../assets/Memory8.png" class="img-fluid w-100" alt="Memory 8">
-                                </div>
-                            </div>                          
+                        <div class="col-6">
+                            <img src="../assets/Memory5.png" class="img-fluid w-100" alt="Memory 5">
+                        </div>
+                        <div class="col-6">
+                            <img src="../assets/Memory6.png" class="img-fluid w-100" alt="Memory 6">
+                        </div>
+                        <div class="col-6">
+                            <img src="../assets/Memory7.png" class="img-fluid w-100" alt="Memory 7">
                         </div>
                     </div>
                 </div>
-            </div>           
+
+                <div class="col-lg-6 d-flex flex-column gap-3">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <img src="../assets/Memory2.png" class="img-fluid w-100" alt="Memory 2">
+                        </div>
+                        <div class="col-12">
+                            <img src="../assets/Memory3.png" class="img-fluid w-100" alt="Memory 3">
+                        </div>
+                        <div class="col-12">
+                            <img src="../assets/Memory8.png" class="img-fluid w-100" alt="Memory 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    <script>
+        const yearTabs = document.querySelectorAll(".about-container-header");
+        yearTabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                yearTabs.forEach(t => t.classList.remove("active"));
+                tab.classList.add("active");
+            });
+        });
+
+        const categoryTabs = document.querySelectorAll(".about-memories-section > div");
+        categoryTabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                categoryTabs.forEach(t => t.classList.remove("active"));
+                tab.classList.add("active");
+            });
+        });
+    </script>
 
 </body>
 
