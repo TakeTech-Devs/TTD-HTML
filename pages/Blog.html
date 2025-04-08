@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Global.css">
+
+</head>
+
+<body>
+    <section id="header"></section>
+    <main>
+        <div>
+            <section id="blog-banner"></section>
+            <!-- <div class='body-curve-left'>
+                <section class="gap-top" id="about-content"></section>
+                <section class="gap-top" id="about-memories"></section>
+            </div> -->
+            <div class='body-curve-right'>
+                <!-- <section class="gap-top gap-bottom" id="about-mission"></section> -->
+                <section class="gap-top" id="feedback"></section>
+                <section class="gap-top gap-bottom" id="contact-section"></section>
+            </div>
+        </div>
+    </main>
+    <section id="footer"></section>
+
+    <script>
+        function loadHTML(sectionId, filePath, callback) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(sectionId).innerHTML = data;
+                    if (callback) callback();
+                })
+                .catch(error => console.error("Error loading " + filePath, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadHTML("header", "../GlobalComponents/Navbar.html", function () {
+                setTimeout(() => {
+                    const navbarToggler = document.querySelector(".navbar-toggler");
+                    const navbarCollapse = document.querySelector(".navbar-collapse");
+
+                    if (navbarToggler && navbarCollapse) {
+                        navbarToggler.addEventListener("click", function () {
+                            navbarCollapse.classList.toggle("show");
+                            navbarToggler.classList.toggle("collapsed");
+                        });
+                    }
+                }, 100);
+            });
+
+            loadHTML("about-memories", "../Components/AboutMemories.html", function () {
+                const yearTabs = document.querySelectorAll(".about-container-header");
+                yearTabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                        yearTabs.forEach(t => t.classList.remove("active"));
+                        tab.classList.add("active");
+                    });
+                });
+
+                const categoryTabs = document.querySelectorAll(".about-memories-section > div");
+                categoryTabs.forEach(tab => {
+                    tab.addEventListener("click", () => {
+                        categoryTabs.forEach(t => t.classList.remove("active"));
+                        tab.classList.add("active");
+                    });
+                });
+            });
+
+
+            loadHTML("blog-banner", "../Components/BlogBanner.html");
+            // loadHTML("about-content", "../Components/AboutContent.html");
+            // loadHTML("about-mission", "../Components/AboutMission.html");
+            // loadHTML("service-choose", "../Components/ServiceChoose.html");
+            loadHTML("feedback", "../Components/Feedback.html");
+            loadHTML("contact-section", "../Components/ContactSection.html");
+            loadHTML("footer", "../GlobalComponents/Footer.html");
+        });
+
+
+    </script>
+
+</body>
+
+</html>
