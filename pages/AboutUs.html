@@ -21,6 +21,7 @@
             </div>
             <div class='body-curve-right'>
                 <section class="gap-top gap-bottom" id="about-mission"></section>
+                <section class="gap-bottom" id="about-contender"></section>
                 <section class="gap-top" id="feedback"></section>
                 <section class="gap-top gap-bottom" id="contact-section"></section>
             </div>
@@ -76,7 +77,33 @@
             loadHTML("about-banner", "../Components/AboutUsBanner.html");
             loadHTML("about-content", "../Components/AboutContent.html");
             loadHTML("about-mission", "../Components/AboutMission.html");
-            // loadHTML("service-choose", "../Components/ServiceChoose.html");
+            loadHTML("about-contender", "../Components/AboutContender.html", function () {
+                const thumbnails = document.querySelectorAll('.profile-thumbnail');
+                const profileDisplay = document.getElementById('profile-display');
+                const mainImage = document.getElementById('main-image');
+                const profileName = document.getElementById('profile-name');
+                const profileTitle = document.getElementById('profile-title');
+                const profileBio = document.getElementById('profile-bio');
+
+                thumbnails.forEach(thumbnail => {
+                    thumbnail.addEventListener('click', function () {
+                        thumbnails.forEach(t => t.classList.remove('active'));
+
+                        this.classList.add('active');
+
+                        mainImage.src = this.querySelector('img').src;
+                        profileName.textContent = this.getAttribute('data-name');
+                        profileTitle.textContent = this.getAttribute('data-title');
+                        profileBio.textContent = this.getAttribute('data-bio');
+
+                        if (profileDisplay.classList.contains('d-none')) {
+                            profileDisplay.classList.remove('d-none');
+                            profileDisplay.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    });
+                });
+            });
+
             loadHTML("feedback", "../Components/Feedback.html");
             loadHTML("contact-section", "../Components/ContactSection.html");
             loadHTML("footer", "../GlobalComponents/Footer.html");

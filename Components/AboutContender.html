@@ -49,16 +49,16 @@
             <div class="profile-thumbnail active" data-name="Gautam Sharma" data-title="Mentor" data-bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet.">
                 <img src="../assets/aboutcontgs.jpg" alt="Gautam Sharma">
             </div>
-            <div class="profile-thumbnail" data-name="Rahul Kumar" data-title="Developer" data-bio="Passionate developer with expertise in web technologies and a knack for solving complex problems.">
+            <div class="profile-thumbnail" data-name="Kaustav Ghosh" data-title="Frontend Developer" data-bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet.">
                 <img src="../assets/aboutcontkg.jpg" alt="Rahul Kumar">
             </div>
-            <div class="profile-thumbnail" data-name="Priya Singh" data-title="Designer" data-bio="Creative designer with an eye for detail and a passion for creating beautiful and functional user interfaces.">
+            <div class="profile-thumbnail" data-name="Sohini Bhattachariya" data-title="Co-Founder" data-bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet.">
                 <img src="../assets/aboutcontsb.jpeg" alt="Priya Singh">
             </div>
-            <div class="profile-thumbnail" data-name="Amit Patel" data-title="Project Manager" data-bio="Experienced project manager with a track record of delivering successful projects on time and within budget.">
+            <div class="profile-thumbnail" data-name="Aditya Das" data-title="Backend Developer" data-bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet.">
                 <img src="../assets/aboutcontad.png" alt="Amit Patel">
             </div>
-            <div class="profile-thumbnail" data-name="Vikram Joshi" data-title="Marketing Specialist" data-bio="Marketing expert with a deep understanding of digital marketing strategies and consumer behavior.">
+            <div class="profile-thumbnail" data-name="Soumodeep De" data-title="Co-Founder" data-bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboreet.">
                 <img src="../assets/aboutcontsr.png" alt="Vikram Joshi">
             </div>
         </div>
@@ -75,23 +75,17 @@
 
             thumbnails.forEach(thumbnail => {
                 thumbnail.addEventListener('click', function() {
-                    // Remove active class from all thumbnails
                     thumbnails.forEach(t => t.classList.remove('active'));
                     
-                    // Add active class to clicked thumbnail
                     this.classList.add('active');
                     
-                    // Update main profile with clicked thumbnail's data
                     mainImage.src = this.querySelector('img').src;
                     profileName.textContent = this.getAttribute('data-name');
                     profileTitle.textContent = this.getAttribute('data-title');
                     profileBio.textContent = this.getAttribute('data-bio');
                     
-                    // Show the profile display if it's hidden
                     if (profileDisplay.classList.contains('d-none')) {
                         profileDisplay.classList.remove('d-none');
-                        
-                        // Smooth scroll to the profile display
                         profileDisplay.scrollIntoView({ behavior: 'smooth' });
                     }
                 });
