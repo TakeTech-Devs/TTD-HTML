@@ -1,0 +1,4 @@
+.blog-content{background-color: #fff; padding: 50px !important;box-shadow: 0px 0px 25px 0px #52793780;
+}
+.blog-content-image {height: 350px;width: 400px;}
+.blog-content-image img{object-fit: contain;}
