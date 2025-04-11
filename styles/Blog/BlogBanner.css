@@ -1,4 +1,4 @@
-.blog-upper{background-size:100% 100%; background-image: url(../assets/header.png);height: 120vh;}
+.blog-upper{background-size:100% 100%; background-image: url(../../assets/header.png);height: 120vh;}
 .blog-banner-text{padding-block-start: 90px; padding-inline-end: 80px;}
 .blog-banner-image{height: auto;max-height: 100%;width: 100%;display: flex;justify-content: end;align-items: center;padding-block-start: 90px;}
 .blog-banner-image img{object-fit: contain;}
