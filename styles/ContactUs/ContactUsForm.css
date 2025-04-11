@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 800px;
-    background-image: url('../assets/ContactUs Bg.jpg');
+    background-image: url('../../assets/ContactUs Bg.jpg');
     background-size: cover;
     background-position: center;
     z-index: 1;
