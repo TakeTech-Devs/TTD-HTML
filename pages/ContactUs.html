@@ -49,25 +49,7 @@
                 }, 100);
             });
 
-            loadHTML("about-memories", "../Components/AboutMemories.html", function () {
-                const yearTabs = document.querySelectorAll(".about-container-header");
-                yearTabs.forEach(tab => {
-                    tab.addEventListener("click", () => {
-                        yearTabs.forEach(t => t.classList.remove("active"));
-                        tab.classList.add("active");
-                    });
-                });
-
-                const categoryTabs = document.querySelectorAll(".about-memories-section > div");
-                categoryTabs.forEach(tab => {
-                    tab.addEventListener("click", () => {
-                        categoryTabs.forEach(t => t.classList.remove("active"));
-                        tab.classList.add("active");
-                    });
-                });
-            });
-
-
+        
             loadHTML("contact-banner", "../Components/ContactUs/ContactUsBanner.html");
             loadHTML("contact-us-form", "../Components/ContactUs/ContactUsForm.html");
             loadHTML("contact-section", "../Components/ContactSection.html");
