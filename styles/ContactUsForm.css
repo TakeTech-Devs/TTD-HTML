@@ -50,6 +50,8 @@
     resize: none;
 }
 
+.contact-subscription-form input:focus {outline:none; box-shadow:none; border:none;}
+
 .icon-img {
     height: 20px;
     width: 20px;

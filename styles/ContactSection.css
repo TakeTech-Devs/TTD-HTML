@@ -1,8 +1,9 @@
 .contact-section {background-color:#B8DC9E; height:240px; display:flex; align-items:center; justify-content:center;}
-.contact-image {width:585px; height:370px;}
-.contact-image img {object-fit:contain;}
+.contact-image {width:585px; height:370px;display: flex;justify-content: center;
+  align-items: center;}
+.contact-image img {object-fit:contain;max-width: 100%;height: auto;}
 
-.subscription-form {display:flex; background-color:#fff; border-radius:21px; align-items:center; width:480px; padding-left:10px;}
+.subscription-form {display:flex; background-color:#fff; border-radius:21px; align-items:center; width:480px; padding-left:10px;max-width: 100%;}
 .subscription-form input {flex-grow:1; padding:10px; border:none; border-radius:21px 0 0 21px; font-size:16px;}
 .subscription-form input:focus {outline:none; box-shadow:none; border:none;}
 .subscription-form button {background-color:#E8B145; color:#000; border:none; padding:10px 20px; border-radius:21px; font-weight:400; cursor:pointer;}
@@ -13,8 +14,7 @@
     padding: 15px;
   }
   .contact-image {
-    width: 450px;
-    height: 300px;
+    width: 390px;
   }
   .subscription-form {
     width: 100%;
