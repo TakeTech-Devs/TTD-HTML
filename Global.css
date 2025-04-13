@@ -23,6 +23,7 @@ img, svg{height: 100%;width: 100%;}
 .gap-bottom{padding-block-end: 100px;}
 
 .home-aboutus{margin-top: -240px;}
+.home-contactus{margin-top: -150px;}
 .home-footer{margin-bottom: -130px;}
 .body-curve-left{background-image: url(./assets/Background.png);background-size: 100% 100%;background-repeat: no-repeat;}
 .body-curve-right{background-image: url(./assets/Background2.png);background-size: 100% 100%;background-repeat: no-repeat;}
