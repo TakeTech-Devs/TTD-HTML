@@ -3,6 +3,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* new */
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+}
+
+.laptop-background-image{
+  width: 1060px;
+  height: 665px;
 }
 
 .laptop-background {
@@ -15,7 +24,8 @@
   z-index: 2;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 200px;
+  top: 46px;
 }
 
 .carousel-card {
@@ -24,9 +34,10 @@
   justify-content: center;
   gap: 43px;
   background-color: #B8DC9E;
-  width: 745px;
-  margin-left: -12px;
-  margin-bottom: 150px;
+  width: 585px;
+  /* margin-left: -12px; */
+  /* margin-bottom: 150px; */
+  
 }
 
 .service-left {
