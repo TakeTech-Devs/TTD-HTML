@@ -10,8 +10,8 @@
 }
 
 .laptop-background-image{
-  width: 1060px;
-  height: 665px;
+  /* width: 1060px; */
+  width: 1092px;
 }
 
 .laptop-background {
@@ -24,27 +24,36 @@
   z-index: 2;
   display: flex;
   flex-direction: row;
-  gap: 200px;
-  top: 46px;
+  gap:5px;
+  top: 45px;
+  /* align-items: center; */
+  /* bottom: 0; */
 }
 
 .carousel-card {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 43px;
-  background-color: #B8DC9E;
-  width: 585px;
+  justify-content: space-between;
+  /* gap: 43px; */
+  /* background-color: #B8DC9E; */
+  width: 862px;
+  height: 487px;
   /* margin-left: -12px; */
   /* margin-bottom: 150px; */
+  position: relative;
   
 }
 
 .service-left {
-  padding-bottom: 50px;
+  /* padding-bottom: 70px;
+  padding-left: 15px; */
+  
 }
 
 .service-details {
+  position: absolute;
+  top: 36px;
+  left: 24px;
   display: flex;
   align-items: center;
   justify-content: center ;
@@ -52,8 +61,11 @@
   text-align: center;
   box-shadow: 6px 7px 14px 0px #52793785;
   background-color: #fff;
-  width: 280px;
-  height: 400px;
+  width: 335px;
+  height: 433px;
+  border-bottom: 32px solid #B8DC9E;
+  border-right: 32px solid #B8DC9E;
+  
 }
 
 .service-details-image {
@@ -81,18 +93,21 @@
 
 .service-right {
   padding-top: 50px;
+  position: absolute;
+  bottom: -56px;
+  right: 3px;
 }
 
 .service-image {
   display: flex;
   justify-content: center;
   position: relative;
-  width: 422px;
-  height: 400px;
+  width: 450px;
+  height: 452px;
   background-color: #fff;
   box-shadow: -8px -4px 18px 0px #52793785;
   overflow: hidden;
-  padding: 20px 0px 20px 20px;
+  padding: 24px 0px 24px 32px;
 }
 
 .service-image img {
