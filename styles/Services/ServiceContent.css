@@ -1,1 +1,11 @@
 .service-content-text{padding-top: 220px;}
+.service-content-image img{object-fit: contain;}
+.service-content-main{margin-bottom: 30px;}
+@media screen and (max-width: 768px){
+    .service-content-section{width: 320px;}
+    .service-content-image{width: 320px;} 
+}
+@media screen and (max-width: 480px){
+    .service-content-section{width: 100%}
+    .service-content-image{width: 100%} 
+}

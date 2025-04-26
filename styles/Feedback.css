@@ -64,6 +64,7 @@ justify-content: end; align-items: center; background-color: #EAF5D9; width: 370
       font-size: 18px;
       padding-right: 30px;
     }
+    .feedback-author::before{right: 235px;}
   }
   
   @media screen and (max-width: 480px) {
@@ -89,11 +90,13 @@ justify-content: end; align-items: center; background-color: #EAF5D9; width: 370
       height: 70px;
     }
     .feedback-details-heading {
-        width: 300px;
-        padding: 15px;
+      width: 300px;
+      padding: 15px;
     }
     .quote-box {
       padding: 15px 65px;
       font-size: 18px;
     }
+    .feedback-author::before{right: 198px;}
   }
+  

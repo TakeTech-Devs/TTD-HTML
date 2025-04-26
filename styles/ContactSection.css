@@ -8,3 +8,37 @@
 .subscription-form input:focus {outline:none; box-shadow:none; border:none;}
 .subscription-form button {background-color:#E8B145; color:#000; border:none; padding:10px 20px; border-radius:21px; font-weight:400; cursor:pointer;}
 .subscription-form button:hover {background-color:#d79b38; color:#000;}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+      padding: 20px;
+      /* text-align: center; */
+      height: 500px;
+    }
+    .contact-image {
+      justify-content: center;
+      /* margin-bottom: 20px; */
+    }
+    .subscription-form {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-text{margin-top: 40px;}
+    .contact-section{
+        height: 1000px;
+    }
+    .subscription-form {
+      margin-top: 30px;
+    }
+    .subscription-form input {
+      border-radius: 21px;
+    }
+    .subscription-form button {
+      border-radius: 21px;
+      /* width: 100%; */
+    }
+  }
+  

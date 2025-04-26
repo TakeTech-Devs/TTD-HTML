@@ -4,3 +4,22 @@
 .blog-content-image {max-height: 100%;width: 100%;display: flex;justify-content: center;align-items: center;z-index: 1;position: relative;padding: 50px 20px;}
 .blog-content-image img{object-fit: contain;}
 .blog-content-text{z-index: 1;position: relative;}
+
+@media screen and (max-width: 768px){
+    .blog-content {
+      /* flex-direction: column; */
+      padding: 20px;
+      /* text-align: center; */
+    }
+    .blog-content-text{padding-left: 20px;}
+    /* .blog-content-image {
+      padding: 30px 10px;
+    } */
+  }
+  
+  @media screen and (max-width: 480px){
+    .blog-content-container {
+      margin-top: 120px;
+    }
+  }
+  

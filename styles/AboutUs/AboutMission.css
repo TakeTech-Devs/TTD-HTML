@@ -1,5 +1,34 @@
 .about-mission-section{display:flex; align-items:center; justify-content:center;margin-top: 100px;position: relative;}
 .about-mission-section::after{content: "";position: absolute;width: 100%;height: 90%;left: 0;top: 50%;transform: translateY(-50%);z-index: 0; background-color:#B8DC9E;}
 .about-mission-text{z-index: 1;position: relative;}
+.about-mission-image img{object-fit: contain;}
 .about-mission-text h6{font-weight: 700;font-size: 40px;line-height: 60px;}
 .about-mission-right-text{width: 80%; margin-top: 65px; margin-left: 65px;}
+
+@media screen and (max-width: 768px) {
+    .about-mission-section {
+      flex-direction: column;
+      padding: 20px;
+      /* text-align: center; */
+      height: 800px;
+    }
+    .about-mission-right-text {
+      width: 100%;
+      /* margin: 30px 0 0 0; */
+      margin: 0;
+    }
+    .about-mission-text h6 {
+      /* font-size: 30px; */
+      line-height: 45px;
+    }
+    .about-mission-text-bottom{margin-top: 50px !important;}
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about-mission-section{height: 850px;}
+    .about-mission-text h6 {
+      /* font-size: 24px; */
+      line-height: 36px;
+    }
+  }
+  
