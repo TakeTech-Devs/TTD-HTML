@@ -17,6 +17,7 @@
   @media screen and (max-width: 480px) {
     .blog-card {
       height: 500px;
+      width: 100%;
     }
     .blog-content {
       height: 260px;
