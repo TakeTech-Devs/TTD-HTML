@@ -54,7 +54,19 @@
                             navbarToggler.classList.toggle("collapsed");
                         });
                     }
-                }, 100);
+                    // ✅ Add active class based on current page
+                    const navLinks = document.querySelectorAll(".nav-link");
+                    const currentPage = window.location.pathname.split("/").pop(); // e.g., "Index.html"
+
+                    navLinks.forEach(link => {
+                        const href = link.getAttribute("href").split("/").pop();
+                        if (href === currentPage || (href === "Index.html" && currentPage === "")) {
+                            link.classList.add("active-link");
+                        } else {
+                            link.classList.remove("active-link");
+                        }
+                    });
+                },0);
             });
 
             loadHTML("home-banner", "../Components/HomeBanner.html");
@@ -83,7 +95,7 @@
                     });
                 };
 
-                
+
                 if (typeof $ === 'undefined') {
                     loadScript("https://code.jquery.com/jquery-3.6.0.min.js", () => {
                         loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", initSlick);

@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto nav-links">
                         <li class="nav-item">
-                            <a class="nav-link active-link" href="../pages/Index.html">Home</a>
+                            <a class="nav-link" href="../pages/Index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/AboutUs.html">About</a>
@@ -52,14 +52,17 @@
         </div>
     </header>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
+       
         document.addEventListener("DOMContentLoaded", function () {
             const navbar = document.querySelector(".sticky-navbar");
             const navLinks = document.querySelectorAll(".nav-link");
             const navbarCollapse = document.querySelector("#navbarNav");
             const navbarToggler = document.querySelector(".navbar-toggler");
             const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-
+            
             window.addEventListener("scroll", function () {
                 if (window.scrollY > 50) {
                     navbar.classList.add("scrolled");
@@ -67,9 +70,11 @@
                     navbar.classList.remove("scrolled");
                 }
             });
-
+            
             navLinks.forEach(link => {
                 link.addEventListener("click", function () {
+                    
+                    console.log(navLinks);
                     navLinks.forEach(nav => nav.classList.remove("active-link"));
                     this.classList.add("active-link");
 
@@ -86,7 +91,7 @@
 
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>
