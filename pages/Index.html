@@ -61,7 +61,7 @@
             loadHTML("about-us", "../Components/AboutUs.html");
             loadHTML("services", "../Components/Services.html");
             loadHTML("feedback", "../Components/Feedback.html", function () {
-                // Load jQuery and Slick scripts if not already loaded
+
                 const loadScript = (src, callback) => {
                     const script = document.createElement('script');
                     script.src = src;
@@ -83,7 +83,7 @@
                     });
                 };
 
-                // Ensure jQuery is available
+                
                 if (typeof $ === 'undefined') {
                     loadScript("https://code.jquery.com/jquery-3.6.0.min.js", () => {
                         loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", initSlick);

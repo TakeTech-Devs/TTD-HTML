@@ -33,7 +33,7 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById(sectionId).innerHTML = data;
-                    if (callback) callback(); 
+                    if (callback) callback();
                 })
                 .catch(error => console.error("Error loading " + filePath, error));
         }
@@ -56,8 +56,39 @@
             loadHTML("service-banner", "../Components/Services/ServicesBanner.html");
             loadHTML("service-content", "../Components/Services/ServicesContent.html");
             loadHTML("service-providing", "../Components/Services/ServiceProviding.html");
-            loadHTML("service-choose", "../Components/Services/ServiceChoose.html");            
-            loadHTML("feedback", "../Components/Feedback.html");
+            loadHTML("service-choose", "../Components/Services/ServiceChoose.html");
+            loadHTML("feedback", "../Components/Feedback.html", function () {
+
+                const loadScript = (src, callback) => {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    script.onload = callback;
+                    document.body.appendChild(script);
+                };
+
+                const initSlick = () => {
+                    $('.feedback-container').slick({
+                        vertical: true,
+                        verticalSwiping: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2500,
+                        infinite: true,
+                        arrows: false,
+                        dots: false
+                    });
+                };
+
+
+                if (typeof $ === 'undefined') {
+                    loadScript("https://code.jquery.com/jquery-3.6.0.min.js", () => {
+                        loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", initSlick);
+                    });
+                } else {
+                    loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", initSlick);
+                }
+            });
             loadHTML("contact-section", "../Components/ContactSection.html");
             loadHTML("footer", "../GlobalComponents/Footer.html");
         });
