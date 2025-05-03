@@ -28,4 +28,14 @@ img, svg{height: 100%;width: 100%;}
 .body-curve-left{background-image: url(./assets/Background.png);background-size: 100% 100%;background-repeat: no-repeat;}
 .body-curve-right{background-image: url(./assets/Background2.png);background-size: 100% 100%;background-repeat: no-repeat;}
 
-.global-banner{background-size:100% 100%; background-image: url(../assets/header.png);height: 120vh;z-index: 2;position: relative;}
+.global-banner{background-size:100% 100%; background-image: url(../assets/header.png);height: 964px;z-index: 2;position: relative;left: 0;right: 0;}
+
+
+@media screen and (max-width: 768px) {
+    .global-banner{height: 1040px;}
+}
+
+@media screen and (max-width: 480px) {
+    .global-banner{height: 1496px; background-size: cover;}
+    .others-banner{height: 815px;background-size: cover;}
+}

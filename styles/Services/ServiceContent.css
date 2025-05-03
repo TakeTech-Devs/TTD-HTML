@@ -1,4 +1,5 @@
 .service-content-text{padding-top: 220px;}
+.service-content-image{width: 90%;}
 .service-content-image img{object-fit: contain;}
 .service-content-main{margin-bottom: 30px;}
 @media screen and (max-width: 768px){
@@ -6,6 +7,9 @@
     .service-content-image{width: 320px;} 
 }
 @media screen and (max-width: 480px){
+    .service-content-main{flex-wrap: wrap;}
     .service-content-section{width: 100%}
-    .service-content-image{width: 100%} 
+    .service-content-image{width: 80%;} 
+    .service-content-header{gap: 30px;}
+    .service-content-text{padding-top: 150px;}
 }

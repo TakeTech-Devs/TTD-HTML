@@ -14,7 +14,9 @@
 @media screen and (max-width: 768px) {
     .about-text {
       padding-inline-end: 10px;
+      padding-top: 150px;
     }
+    .about-image{padding-top: 150px;}
     .about-text h6 {
       font-size: 32px;
     }
@@ -52,7 +54,7 @@
     .about-section-text {
       padding: 15px;
     }
-    .about-text{padding-top: 575px;}
+    .about-text{padding-top: 0px;}
     .about-image{padding-top: 50px;}
   }
   
