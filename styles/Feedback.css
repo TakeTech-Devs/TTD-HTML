@@ -246,15 +246,21 @@
     padding: 10px;
   }
 
+  .feedback-giver-header{text-align: center;}
+  .feedback-giver{text-align: center;}
+
   .feedback-header {
     height: auto;
     margin-left: 0;
     width: 100%;
+    gap: 50px;
   }
 
   .feedback-header-right {
     margin-left: 0px;
     width: 100%;
+    height: auto;
+    gap: 50px;
   }
 
   .feedback-footer {
@@ -264,6 +270,7 @@
   .feedback-profile {
     width: 80px;
     height: 80px;
+    box-shadow: none;
   }
 
   .feedback-profile img {
@@ -275,6 +282,7 @@
     width: 100%;
     padding: 15px;
     margin-left: 0;
+    box-shadow: none;
   }
 
   .quote-box {
@@ -284,5 +292,8 @@
 
   .feedback-author::before {
     right: 198px;
+  }
+  .slick-list.draggable {
+    height: 775px !important;
   }
 }

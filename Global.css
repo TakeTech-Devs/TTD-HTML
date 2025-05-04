@@ -41,9 +41,11 @@ img, svg{height: 100%;width: 100%;}
 }
 
 @media screen and (max-width: 575px) {
-    .global-banner{height: auto; }
+    .global-banner{height: auto; background-image: none;}
     .others-banner{height: auto; background-image: none;}
     .gap-top{padding-block-start: 40px;}
     .gap-bottom{padding-block-end: 40px;}
     .home-aboutus{margin-top:0px}
+    .home-contactus{margin-top:0px;}
+    .home-footer{margin-top: 0px;}
 }
