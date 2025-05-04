@@ -1,4 +1,4 @@
-.contender-container {display:flex; flex-wrap:wrap; justify-content:space-between; width:100%; padding:20px; gap: 10px;}
+.contender-container {display:flex; flex-wrap:wrap; justify-content:space-between; padding:20px; gap: 10px;}
 .contender-card {display:flex; align-items:start; justify-content: space-between; background:#B8DC9E; min-height:200px; width: calc(50% - 5px) !important;box-sizing: border-box;background-image: url("../assets/contbg.png");background-size: 100% 100% }
 .contender-card-text {background:#B8DC9E; min-height:200px; width: calc(50% - 5px) !important;box-sizing: border-box;}
 .contender-card img {width:210px; height:290px; object-fit:cover; margin-right:15px;}
@@ -27,7 +27,7 @@
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 575px) {
     .contender-card img {
       width: 140px;
       height: 200px;

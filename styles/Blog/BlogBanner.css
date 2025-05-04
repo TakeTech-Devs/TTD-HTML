@@ -11,7 +11,7 @@
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 575px) {
     .blog-upper{height: 230vh; background-size: cover;}
     .blog-banner-text {   
       padding-inline-end: 10px;

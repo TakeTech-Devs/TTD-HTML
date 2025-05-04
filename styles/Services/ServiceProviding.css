@@ -38,7 +38,7 @@
     justify-content: center;
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 575px) {
     .service-right-grid {padding-top: 70px;}
 }
   

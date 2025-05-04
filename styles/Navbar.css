@@ -129,6 +129,10 @@
     .nav-links .active-link {
         width: auto;
         margin-left: 5px;
+        color: #76b74a;
+        background: #fff;
+        padding: 0;
+        margin: 0;
     }
 
     .contact-us-btn {
@@ -139,6 +143,8 @@
         margin-block: 30px;
         align-items: center;
     }
+    .nav-item .nav-link{padding: 0;margin: 0;text-align: center;}
+    .navbar-nav .nav-item{padding: 0;margin: 0;}
 }
 
 @media (max-width: 480px) {

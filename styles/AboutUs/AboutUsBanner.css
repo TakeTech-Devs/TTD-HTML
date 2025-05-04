@@ -11,7 +11,7 @@
     }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 575px) {
     .aboutus-upper{height: 230vh; background-size: cover;}
     .aboutus-banner-text {   
       padding-inline-end: 10px;

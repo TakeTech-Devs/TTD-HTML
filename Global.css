@@ -31,7 +31,7 @@ img, svg{height: 100%;width: 100%;}
 .global-banner{background-size:100% 100%; background-image: url(../assets/header.png);height: 964px;z-index: 2;position: relative;left: 0;right: 0;}
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
      h1{font-size: 40px;margin-block-end: 10px;}
      h2{font-size: 30px;padding-block: 20px;padding-inline: 25px;margin-block-end: 20px;}
      h2::after{height: 50px;width: 50px;}

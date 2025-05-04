@@ -6,7 +6,7 @@
     .service-content-section{width: 320px;}
     .service-content-image{width: 320px;} 
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 575px){
     .service-content-main{flex-wrap: wrap;}
     .service-content-section{width: 100%}
     .service-content-image{width: 80%;} 
