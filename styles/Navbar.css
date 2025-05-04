@@ -136,8 +136,8 @@
     }
 
     .ms-auto.nav-links.navbar-nav {
-        margin-block-end: 10px;
-        align-items: normal;
+        margin-block: 30px;
+        align-items: center;
     }
 }
 
@@ -146,7 +146,14 @@
     .nav-links .active-link {
         width: auto;
         margin-left: 5px;
+        color: #76b74a;
+        background: #fff;
+        padding: 0;
+        margin: 0;
     }
+
+    .nav-item .nav-link{padding: 0;margin: 0;text-align: center;}
+    .navbar-nav .nav-item{padding: 0;margin: 0;}
 
     .contact-us-btn {
         margin-left: 5px;

@@ -57,20 +57,39 @@
 
             loadHTML("about-memories", "../Components/AboutUs/AboutMemories.html", function () {
                 const yearTabs = document.querySelectorAll(".about-container-header");
+                const categoryTabs = document.querySelectorAll(".about-memories-section > div");
+                const memoryGrids = document.querySelectorAll(".memory-grid");
+
+                let selectedYear = "2023";
+                let selectedCategory = "Ceremony";
+
+                function updateDisplay() {
+                    memoryGrids.forEach(grid => {
+                        const matchYear = grid.getAttribute("data-year") === selectedYear;
+                        const matchCategory = grid.getAttribute("data-category") === selectedCategory;
+                        grid.classList.toggle("d-none", !(matchYear && matchCategory));
+                    });
+                }
+
                 yearTabs.forEach(tab => {
                     tab.addEventListener("click", () => {
                         yearTabs.forEach(t => t.classList.remove("active"));
                         tab.classList.add("active");
+                        selectedYear = tab.getAttribute("data-year");
+                        updateDisplay();
                     });
                 });
 
-                const categoryTabs = document.querySelectorAll(".about-memories-section > div");
                 categoryTabs.forEach(tab => {
                     tab.addEventListener("click", () => {
                         categoryTabs.forEach(t => t.classList.remove("active"));
                         tab.classList.add("active");
+                        selectedCategory = tab.getAttribute("data-category");
+                        updateDisplay();
                     });
                 });
+
+                updateDisplay(); 
             });
 
 
@@ -137,7 +156,7 @@
                 }
 
                 setTimeout(() => {
-                    
+
                     // ✅ Add active class based on current page
                     const navLinks = document.querySelectorAll(".nav-link");
                     const currentPage = window.location.pathname.split("/").pop(); // e.g., "Index.html"
@@ -150,7 +169,7 @@
                             link.classList.remove("active-link");
                         }
                     });
-                },0);
+                }, 0);
 
 
 

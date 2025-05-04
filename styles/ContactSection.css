@@ -27,9 +27,10 @@
   
   @media screen and (max-width: 480px) {
     .contact-text{margin-top: 40px;}
-    .contact-section{
-        height: 1000px;
+    .contact-section::after{
+        display: none;
     }
+    .contact-section{background-color: #B8DC9E;}
     .subscription-form {
       margin-top: 30px;
     }

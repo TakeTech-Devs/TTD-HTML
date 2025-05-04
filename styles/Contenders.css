@@ -32,13 +32,14 @@
       width: 140px;
       height: 200px;
     }
-    .contender-card{flex-direction: column;padding: 10px;}
+    .contender-card{flex-direction: column;padding: 10px;width: 100% !important;justify-content: center;align-items: center; text-align: center;}
 
-    
     .contender-card-text {
-      padding: 10px;
+      padding: 10px;width: 100% !important;
     }
     .contenders-button {
       margin-top: 20px;
     }
+    .contender-info{padding-right: 0;padding-top: 20px;}
+    .contender-info p{text-align: center;}
   }

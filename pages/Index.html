@@ -15,16 +15,16 @@
         <div>
             <section id="home-banner"></section>
             <div class='body-curve-left home-aboutus'>
-                <section class="gap-top" id="about-us"></section>
+                <section class="gap-top gap-bottom" id="about-us"></section>
                 <section class="gap-top gap-bottom" id="services"></section>
             </div>
             <div class='body-curve-right'>
-                <section class="gap-top" id="feedback"></section>
-                <section class="gap-top" id="blog"></section>
+                <section class="gap-top gap-bottom" id="feedback"></section>
+                <section class="gap-top gap-bottom" id="blog"></section>
                 <section class="gap-top gap-bottom" id="contenders"></section>
             </div>
             <div class='body-curve-left home-footer'>
-                <section class="gap-bottom" id="portfolio"></section>
+                <section class="gap-top gap-bottom" id="portfolio"></section>
                 <section class="gap-top gap-bottom" id="contact-section"></section>
             </div>
         </div>
@@ -66,12 +66,49 @@
                             link.classList.remove("active-link");
                         }
                     });
-                },0);
+                }, 0);
             });
 
             loadHTML("home-banner", "../Components/HomeBanner.html");
             loadHTML("about-us", "../Components/AboutUs.html");
-            loadHTML("services", "../Components/Services.html");
+            loadHTML("services", "../Components/Services.html", function () {
+
+                const loadScript = (src, callback) => {
+                    const script = document.createElement('script');
+                    script.src = src;
+                    script.onload = callback;
+                    document.body.appendChild(script);
+                };
+
+                const initSlickServices = () => {
+                    $('.carousel-slider').slick({
+                        dots: false,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        arrows: false,
+                        centerMode: true,
+                        responsive: [
+                            { breakpoint: 1024, settings: { slidesToShow: 1 } },
+                            { breakpoint: 768, settings: { slidesToShow: 1 } }
+                        ]
+                    });
+                };
+
+                if (typeof $ === 'undefined') {
+                    loadScript("https://code.jquery.com/jquery-3.6.0.min.js", () => {
+                        loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", initSlickServices);
+                    });
+                } else if (typeof $.fn.slick === 'undefined') {
+                    loadScript("https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js", initSlickServices);
+                } else {
+                    initSlickServices();
+                }
+            });
+
             loadHTML("feedback", "../Components/Feedback.html", function () {
 
                 const loadScript = (src, callback) => {
