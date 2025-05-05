@@ -48,6 +48,9 @@
   }
   @media screen and (max-width: 575px) {
     .service-right-grid {padding-top: 70px;}
+    .service-right-content {
+      width: 310px;
+  }
 }
   
   

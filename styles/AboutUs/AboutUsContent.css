@@ -7,7 +7,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .about-content-image {flex-wrap:wrap;}
+
     .about-content-main {
       flex-direction: column;
       gap: 30px !important;
@@ -17,7 +17,7 @@
       width: 100% !important;
     }
     .about-content-text {
-      padding-top: 100px;
+      padding-top: 180px;
     }
   }
   
@@ -25,5 +25,7 @@
     .about-content-text {
       padding-top: 125px;
     }
+    .about-content-image{display: flex; justify-content: center;}
+    .about-content-image img{height: 440px; object-fit: cover;}
   }
   
