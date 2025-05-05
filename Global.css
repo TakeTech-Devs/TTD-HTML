@@ -31,6 +31,8 @@ img, svg{height: 100%;width: 100%;}
 .global-banner{background-size:100% 100%; background-image: url(../assets/header.png);height: 964px;z-index: 2;position: relative;left: 0;right: 0;}
 
 
+
+
 @media screen and (max-width: 768px) {
      h1{font-size: 40px;margin-block-end: 10px;}
      h2{font-size: 30px;padding-block: 20px;padding-inline: 25px;margin-block-end: 20px;}
@@ -40,7 +42,8 @@ img, svg{height: 100%;width: 100%;}
      h4{font-size: 20px;}
      h5{font-size: 18px;}
      p{font-size: 16px;}
-    .global-banner{height: 750px;}
+    .global-banner{height: 710px;}
+    .global-banner-others{height: 550px;}
     .primary-button{font-size: 16px;padding: 14px;border-radius:20px 0 20px 0;}
     .secondary-button{font-size: 14px;width: 110px;}
     .gap-top{padding-block-start: 50px;}
@@ -49,8 +52,8 @@ img, svg{height: 100%;width: 100%;}
 }
 
 @media screen and (max-width: 575px) {
-    .global-banner{height: auto; background-image: none;}
-    .others-banner{height: auto; background-image: none;}
+    .global-banner-mobile{background-size:100% 100%; background-image: url(../assets/header-mobile.png);height: 1060px;z-index: 2;position: relative;left: 0;right: 0;}
+    .others-banner-mobile{background-size:100% 100%; background-image: url(../assets/header-mobile.png);height: 670px;z-index: 2;position: relative;left: 0;right: 0;}
     .gap-top{padding-block-start: 40px;}
     .gap-bottom{padding-block-end: 40px;}
     .home-aboutus{margin-top:0px}
