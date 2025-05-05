@@ -7,18 +7,8 @@
 
 
 @media screen and (max-width: 768px) {
-
-    .about-content-main {
-      flex-direction: column;
-      gap: 30px !important;
-    }
-    .about-content-left-container,
-    .about-content-right-container {
-      width: 100% !important;
-    }
-    .about-content-text {
-      padding-top: 180px;
-    }
+  .about-content-main{gap: 25px !important;}  
+  .about-content-text {padding-top: 180px;}
   }
   
   @media screen and (max-width: 575px) {
