@@ -15,6 +15,9 @@
       height: auto;
       padding: 15px;
     }
+    .blog-like-content h5{font-size: 18px;line-height: 30px;}
+    .blog-like-text h6{font-size: 25px;}
+
   }
   
   @media screen and (max-width: 575px) {

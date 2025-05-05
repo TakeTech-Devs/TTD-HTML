@@ -38,6 +38,14 @@
     justify-content: center;
   }
   
+  @media  screen and (max-width: 768px) {
+    .service-right-content-image{
+      width: 75px;
+      height: 75px;    
+      top: -50px;
+    }
+    .service-right-content{width: 190px;}
+  }
   @media screen and (max-width: 575px) {
     .service-right-grid {padding-top: 70px;}
 }

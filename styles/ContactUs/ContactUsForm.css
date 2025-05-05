@@ -76,9 +76,10 @@
         padding: 20px;
         height: auto;
     }
+    .contact-subscription-form .form-control{font-size: 14px;}
 
     .contact-subscription-form h6 {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .contact-form-wrapper {

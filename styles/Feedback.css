@@ -172,7 +172,7 @@
 }
 
 .quote-text {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -237,8 +237,10 @@
     right: 235px;
   }
   .slick-list.draggable {
-    height: 890px !important;
+    height: 720px !important;
   }
+  .feedback-giver{font-size: 18px;}
+  .feedback-rating li{font-size: 20px;}
 }
 
 @media screen and (max-width: 575px) {
@@ -294,6 +296,6 @@
     right: 198px;
   }
   .slick-list.draggable {
-    height: 775px !important;
+    height: 630px !important;
   }
 }
