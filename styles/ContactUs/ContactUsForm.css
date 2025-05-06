@@ -105,4 +105,6 @@
     .background-image {
         height: auto;
     }
+    .icon-img{height: 16px;width: 16px;}
+    .contact-social-icon{height: 18px;width: 18px;}
 }
