@@ -21,7 +21,7 @@
             </div>
             <div class='body-curve-right home-footer'>
                 <section class="gap-top gap-bottom" id="about-mission"></section>
-                <!-- <section class="gap-top gap-bottom" id="about-contender"></section> -->
+                <section class="gap-top gap-bottom" id="about-contender"></section>
                 <section class="gap-top gap-bottom" id="feedback"></section>
                 <section class="gap-top gap-bottom" id="contact-section"></section>
             </div>
@@ -89,7 +89,7 @@
                     });
                 });
 
-                updateDisplay(); 
+                updateDisplay();
             });
 
 
@@ -97,31 +97,20 @@
             loadHTML("about-content", "../Components/AboutUs/AboutContent.html");
             loadHTML("about-mission", "../Components/AboutUs/AboutMission.html");
             loadHTML("about-contender", "../Components/AboutUs/AboutContender.html", function () {
-                const thumbnails = document.querySelectorAll('.profile-thumbnail');
-                const profileDisplay = document.getElementById('profile-display');
-                const mainImage = document.getElementById('main-image');
-                const profileName = document.getElementById('profile-name');
-                const profileTitle = document.getElementById('profile-title');
-                const profileBio = document.getElementById('profile-bio');
-
-                thumbnails.forEach(thumbnail => {
-                    thumbnail.addEventListener('click', function () {
-                        thumbnails.forEach(t => t.classList.remove('active'));
-
-                        this.classList.add('active');
-
-                        mainImage.src = this.querySelector('img').src;
-                        profileName.textContent = this.getAttribute('data-name');
-                        profileTitle.textContent = this.getAttribute('data-title');
-                        profileBio.textContent = this.getAttribute('data-bio');
-
-                        if (profileDisplay.classList.contains('d-none')) {
-                            profileDisplay.classList.remove('d-none');
-                            profileDisplay.scrollIntoView({ behavior: 'smooth' });
+                const cards = document.querySelectorAll('.image-wrap');
+                cards.forEach(card => {
+                    card.addEventListener('click', function () {
+                        // Toggle active if already selected
+                        if (this.classList.contains('active')) {
+                            this.classList.remove('active');
+                        } else {
+                            cards.forEach(c => c.classList.remove('active'));
+                            this.classList.add('active');
                         }
                     });
                 });
             });
+
 
             loadHTML("feedback", "../Components/Feedback.html", function () {
 
