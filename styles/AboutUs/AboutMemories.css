@@ -1,6 +1,7 @@
 .about-memories-section-image {
     height: 25px;
     width: 25px;
+    display: flex;
 }
 
 .about-memories-section-image img {
@@ -61,4 +62,8 @@
         font-size: 25px;
     }
     .about-memories-section{max-width: 600px !important;height: 50px;}
+}
+
+@media screen and (max-width: 575px) {
+    .about-memories-section-image {height: 15px;width: 15px;}
 }

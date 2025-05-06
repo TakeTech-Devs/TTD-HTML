@@ -22,10 +22,10 @@
   
   @media screen and (max-width: 575px) {
     .blog-like-card {
-      height: 625px;
+      height: 545px;
     }
     .blog-like-content {
-      height: 275px;
+      height: auto;
       padding: 10px;
     }
     .blog-like-card-image {height: auto;}

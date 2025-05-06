@@ -12,10 +12,12 @@
   }
   
   @media screen and (max-width: 575px) {
-    .about-content-text {
+    /* .about-content-text {
       padding-top: 125px;
-    }
+    } */
     .about-content-image{display: flex; justify-content: center;}
     .about-content-image img{height: 440px; object-fit: cover;}
+    .about-content-left-container{width: 100% !important;}
+.about-content-right-container{width: 100% !important;}
   }
   
