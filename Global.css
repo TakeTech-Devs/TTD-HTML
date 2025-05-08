@@ -48,6 +48,8 @@ img, svg{height: 100%;width: 100%;}
     .secondary-button{font-size: 14px;width: 110px;}
     .gap-top{padding-block-start: 50px;}
     .gap-bottom{padding-block-end: 50px;}
+    .home-contactus{margin-top:-100px;}
+    .home-footer{margin-bottom: -100px;}
 
 }
 
